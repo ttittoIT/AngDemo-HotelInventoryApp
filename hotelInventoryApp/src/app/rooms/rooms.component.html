@@ -7,8 +7,8 @@
 <div *ngIf="rooms.availableRooms $$ rooms.availableRooms > 0">Rooms List: </div>
 <div>
     <!-- {{roomsList}} -->
-    <p *ngFor="let room of roomsList; let i = index;">
-        {{i}} -- {{room.roomNumber}} {{room.roomType}} {{room.price}}
+    <p [ngClass]="e ? 'even': 'odd'" *ngFor="let room of roomsList; let i = index; let e = 'even';">
+        {{i}}: {{e}} -- {{room.roomNumber}} {{room.roomType}} {{room.price}}
     </p>
 </div>
 <button (click)="toggle()">Toggle</button>

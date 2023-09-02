@@ -37,6 +37,15 @@ export class RoomsComponent implements OnInit {
       photos: 'some picture url',
       roomNumber: 11
     },
+    {
+      roomType: 'Private Suit',
+      amenities: 'Air Conditioner, Free Wi-Fi, TV, Bathroom',
+      price: 100,
+      checkInTime: new Date(),
+      checkOutTime: new Date(),
+      photos: 'some picture url',
+      roomNumber: 11
+    },
   ];
 
   ngOnInit(): void {
